@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {},
+
   runtimeConfig: {
     apiKey: "",
     apiHost: "",
@@ -13,6 +14,7 @@ export default defineNuxtConfig({
       defaultTemperature: "1",
     },
   },
+
   modules: [
     "@nuxtjs/color-mode",
     "@nuxtjs/i18n",
@@ -20,7 +22,9 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "nuxt-icon",
   ],
+
   css: ["highlight.js/styles/dark.css"],
+
   i18n: {
     locales: [
       {
@@ -53,6 +57,7 @@ export default defineNuxtConfig({
       strictMessage: false,
     },
   },
+
   tailwindcss: {
     config: {
       darkMode: "class",
@@ -60,9 +65,12 @@ export default defineNuxtConfig({
       plugins: [require("@tailwindcss/typography")],
     },
   },
+
   colorMode: {
     classSuffix: "",
   },
+
   ssr: false,
   devtools: { enabled: false },
+  compatibilityDate: "2024-07-21",
 });

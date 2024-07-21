@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import {
+import type {
   ApiRequest,
   ChatItem,
   ChatMessageExItem,
@@ -9,7 +9,7 @@ import {
   ChatSettingItem,
   ImageSize,
 } from "@/types";
-import {
+import type {
   CreateChatCompletionRequest,
   CreateChatCompletionResponse,
   CreateImageRequest,
