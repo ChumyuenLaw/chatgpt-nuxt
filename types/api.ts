@@ -1,4 +1,4 @@
-import {
+import type {
   CreateChatCompletionRequest,
   CreateCompletionRequest,
   CreateImageRequest,
